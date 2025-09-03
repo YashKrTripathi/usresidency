@@ -1,7 +1,28 @@
-/* Mobile CSS - Optimized for Android and iOS Devices */
+/* ===========================================
+   MOBILE CSS - ONLY FOR SCREENS ≤768px
+   ===========================================
+   This file contains mobile-specific styles that will ONLY
+   apply to mobile devices and tablets. Desktop screens will
+   use the main style.css file instead.
+   =========================================== */
 
 /* Import base fonts for mobile */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* Ensure these styles only apply on mobile devices */
+@media only screen and (max-width: 768px) {
+
+/* Mobile CSS Reset - Only affects mobile devices */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('Gallery/ChatGPT Image Sep 4, 2025, 01_28_50 AM.png') center center/cover no-repeat fixed;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
 /* Mobile-specific base styles */
 * {
@@ -27,17 +48,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url('Gallery/ChatGPT Image Sep 4, 2025, 01_28_50 AM.png') center center/cover no-repeat fixed;
-  color: #333;
-  line-height: 1.6;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
 /* Mobile Header Styles */
@@ -854,3 +864,5 @@ h2 {
     transform: none;
   }
 }
+
+} /* End of mobile media query */
